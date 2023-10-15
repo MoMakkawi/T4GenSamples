@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Sample3\CsFileGen.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CsFileGen.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Sample1\TextFileGen.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TextFileGen.txt</LastGenOutput>
@@ -26,10 +34,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>NumbersGen.tt</DependentUpon>
     </None>
+    <None Update="Sample3\CsFileGen.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CsFileGen.cs</LastGenOutput>
+    </None>
+    <None Update="Sample4\VSDataGen.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VSDataGen.txt</LastGenOutput>
+    </None>
+    <None Update="Sample4\VSDataGen.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VSDataGen.tt</DependentUpon>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Sample3\CsCodeGen.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CsCodeGen.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Sample3\CsFileGen.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CsFileGen.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
