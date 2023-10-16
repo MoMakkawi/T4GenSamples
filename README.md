@@ -10,3 +10,6 @@ The example presented is generating a file containing the numbers 1 to 10 genera
 
 ## Third sample:
 Generate a file containing C# code containing properties within classs, which is generated using T4 Templet 
+
+## Fourth sample:
+Generating a text file with the '.txt' suffix that contains information from Visual Studio, generated at design time through the '.tt' Template file.
